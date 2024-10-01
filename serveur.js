@@ -20,7 +20,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 //creation de serveur
-app.listen(3000, () => console.log('Serveur démarré sur le port 3000'));
+const port = process.env.PORT || 3000
+app.listen(port, onsole.log(`serveur stage sur une port ${port}`));
 
 // conexion 
 const url = process.env.connexionDB;
