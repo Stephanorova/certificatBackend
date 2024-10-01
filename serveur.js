@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //creation de serveur
 const port = process.env.PORT || 3000
-app.listen(port, onsole.log(`serveur start sur une port ${port}`));
+app.listen(port, console.log(`serveur start sur une port ${port}`));
 
 // conexion 
 const url = process.env.connexionDB;
